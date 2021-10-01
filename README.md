@@ -83,7 +83,6 @@ npm run storybook
 <p>Want to contribute? Great! </p>
 <h2 id="license">License</h2>
 <p>MIT (Free software)</p>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
 
  </body>
  </html>
