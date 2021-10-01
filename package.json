@@ -4,7 +4,7 @@
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "repository": {
-    "url": "https://github.com/sivakumar00/react-typescript-npm-boilerplate",
+    "url": "https://github.com/Sivakumar00/react-typescript-npm-boilerplate.git",
     "type": "git"
   },
   "license": "MIT",
