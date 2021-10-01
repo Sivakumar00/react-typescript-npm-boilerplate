@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/@types", "./src/types"],
+    "paths": {
+      "@components/*": ["./src/components/*"],
+      "@style/*": ["./src/style/*"],
+      "@hooks/*": ["./src/hooks/*"], 
+      "@utils/*": ["./src/utils/*"],
+      "@src/*": ["./src/*"]
+    },
+    "baseUrl": "./",
+    "target": "ES5",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "lib": ["DOM", "ESNext"],
+    "jsx": "react-jsx",
+    "noEmit": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "downlevelIteration": true,
+    "useDefineForClassFields": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "importHelpers": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "allowSyntheticDefaultImports": true,
+
+    "allowJs": true,
+    "checkJs": true
+  },
+  "exclude": ["node_modules", "dist"],
+  "include": ["**/*.ts", "**/*.tsx"]
+}

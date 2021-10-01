@@ -1,0 +1,78 @@
+{
+  "env": {
+    "browser": true,
+    "es2020": true
+  },
+  "ignorePatterns": ["dist/*","mocks/*", "node_modules/*", "**/*.html", "jest.config.js", "commitlint.config.js"],
+  "extends": [
+    "plugin:react/recommended",
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier", "import"],
+  "rules": {
+    "no-nested-ternary": "off",
+    "no-console": [
+      "warn",
+      {
+        "allow": ["warn", "error"]
+      }
+    ],
+    "no-shadow": "off",
+    "import/prefer-default-export": "off",
+    "react/state-in-constructor": "off",
+    "react/jsx-props-no-spreading": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["./src/test/setupTests.ts", "**/*.test.tsx", "**/*.test.ts", "**/*.stories.tsx"]
+      }
+    ],
+    "no-underscore-dangle": "off",
+
+    "no-param-reassign": 0,
+    "prefer-object-spread": 0,
+    "import/no-unresolved": "error",
+    "import/extensions": [0],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-one-expression-per-line": [0],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".tsx", ".ts", ".js", ".jsx"]
+      }
+    ],
+    "camelcase": "off",
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "object": null
+        }
+      }
+    ]
+  },
+  "settings": {
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx", ".js", ".jsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "project": "./tsconfig.json"
+      }
+    }
+  }
+}
