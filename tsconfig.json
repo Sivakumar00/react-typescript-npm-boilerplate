@@ -8,6 +8,8 @@
       "@utils/*": ["./src/utils/*"],
       "@src/*": ["./src/*"]
     },
+    "declaration": true,
+    "declarationDir": "./dist",
     "baseUrl": "./",
     "target": "ES5",
     "module": "ESNext",
@@ -31,10 +33,10 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "allowSyntheticDefaultImports": true,
-
+    "rootDir": "./src",
     "allowJs": true,
     "checkJs": true
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["**/*.ts", "**/*.tsx"]
+  "include": ["src/**/*.ts", "src/**/*.tsx"]
 }
